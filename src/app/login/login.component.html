@@ -1,0 +1,17 @@
+<form #loginForm="ngForm" (ngSubmit)="checkCredentials(loginForm)">
+    <div class="container-login">
+        <h1>Login</h1>
+        <diV class="name">
+            <label> User name:</label>
+            <input class="username" name="username" placeholder="Enter username" autocomplete="off" type="text" [(ngModel)]="username">
+        </diV>
+        <div class="pwd">
+            <label>Password:</label>
+            <input class="password" name="password" placeholder="Enter password" autocomplete="off" type="password"
+                [(ngModel)]="password">
+        </div>
+        <button class="btn-submit" [disabled]="!loginForm.valid" type="submit">
+            Submit
+        </button>
+    </div>
+</form>

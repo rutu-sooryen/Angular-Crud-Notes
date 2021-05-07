@@ -1,0 +1,18 @@
+<form #notesForm="ngForm" (ngSubmit)="saveProductDetails(notesForm)">
+    <div class="container">
+        <label>Title:</label>
+        <input class="form-control" placeholder="Enter Title" autocomplete="off" type="text" name="title"
+            [(ngModel)]="title" required>
+        <label>Body:</label>
+        <textarea class="form-control" name="body" placeholder="Enter Description" autocomplete="off" type="text"
+            [(ngModel)]="body" required></textarea>
+        <div>
+            <button class="btn-submit" type="submit" [disabled]="!notesForm.valid">
+                {{ notesButtonName || 'Save'}}
+            </button>
+            <button class="btn-submit" [disabled]="!notesForm.valid" (click)="addNewNotes()">
+                Add Notes
+            </button>
+        </div>
+    </div>
+</form>

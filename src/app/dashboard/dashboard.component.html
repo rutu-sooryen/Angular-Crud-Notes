@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="header">
+        <span> Notes </span>
+        <button class="logout" (click)="logout()"> Logout </button>
+    </div>
+    <hr>
+
+    <div class="notes">
+        <div class="column">
+            <app-note-list (selectedNote)="sendSelectedNote($event)"></app-note-list>
+        </div>
+        <div class="column">
+            <app-add-notes [notesButtonName]="notesButtonName" [title]="selectedNoteTitle" [body]="selectedNoteBody"
+            [selectedId]="selectedId"></app-add-notes>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="note" (click)="selectNote(item)" *ngFor="let item of notesList">
+        <span (click)="deleteNote(item)">x</span>
+        <h2>{{item.title}}</h2>
+        <p>{{item.body}}</p>
+    </div>
+    <div *ngIf="displayMessage" class="message">
+        <h1>
+            No Notes added!
+        </h1>
+    </div>
+</div>
