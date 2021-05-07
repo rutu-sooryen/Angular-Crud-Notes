@@ -1,10 +1,11 @@
 .container {
-    height: 500px;
-    overflow: auto;
+    height: auto;
+    font-family: Arial;
     .note {
         border: 1px solid lightgrey;
         padding: 10px;
         border-radius: 5px;
+        margin: 5px;
         &:hover {
             cursor: pointer;
             border-color: lightseagreen;
@@ -28,11 +29,9 @@
                 cursor: pointer;
                 border-color: lightseagreen;
                 border-width: 2px;
-                color: lightseagreen;
-                background-color: white;
             }
         }
-        p{
+        p {
             color: grey;
         }
     }

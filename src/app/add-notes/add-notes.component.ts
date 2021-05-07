@@ -39,6 +39,10 @@ export class AddNotesComponent implements OnInit {
     this.notesForm.reset();
   }
 
+  cancelNotes(){
+    this.notesForm.reset();
+  }
+
   addNewNotes() {
     this.notesForm.reset();
     this.notesButtonName = 'Save';

@@ -1,17 +1,12 @@
-.container {
-    min-height: 300px;
-    width: 70%;
-    margin: 30px auto;
-    border-radius: 5px;
+.main {
     padding: 10px 20px;
-    border: 1px solid lightseagreen;
+    font-family: Arial;
     .header {
-        width: 100%;
         font-weight: bold;
         margin: 10px;
         span {
             font-size: 40px;
-            color:lightseagreen;
+            color: lightseagreen;
         }
         .logout {
             max-width: 250px;
@@ -21,14 +16,14 @@
             border: none;
             color: white;
             background-color: lightseagreen;
+            cursor: pointer;
         }
     }
     .notes {
         column-count: 2;
         column-gap: 40px;
-        column-rule-style: solid;
-        column-rule-style: dotted;
         column-width: 100px;
-        margin-top: 30px;
+        width: 70%;
+        margin: 30px auto;
     }
 }

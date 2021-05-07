@@ -1,41 +1,53 @@
-.container {
-    padding: 10px;
-    display: inline-grid;
-    width: 100%;
-    label {
-        margin-right: 10px;
-        font-weight: bold;
-    }
-    input,
-    textarea {
-        padding: 10px;
-        border-radius: 5px;
-        border: 1px solid lightgrey;
-        margin: 5px;
-        &:hover {
+.main {
+    text-align: right;
+    font-family: Arial;
+    .container {
+        display: inline-grid;
+        width: 100%;
+        label {
+            margin-right: 10px;
+            font-weight: bold;
+            text-align: left;
+            margin-top: 10px;
+        }
+        input,
+        textarea {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid lightgrey;
+            margin-top: 5px;
+            font-family: Arial;
+            &:hover {
+                border: 1px solid lightseagreen;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+        textarea {
+            height: 300px;
+        }
+        .btn-submit,
+        .btn-cancel {
+            padding: 10px;
+            border-radius: 5px;
+            background-color: lightseagreen;
+            margin: 30px 0px 30px 20px;
+            width: 150px;
+            font-weight: bold;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .btn-cancel {
+            background-color: white;
             border: 1px solid lightseagreen;
+            color: lightseagreen;
         }
-        &:focus {
-            outline: none;
-        }
-    }
-    textarea {
-        height: 300px;
-    }
-    .btn-submit {
-        padding: 10px;
-        border-radius: 10px;
-        background-color: lightseagreen;
-        margin: 30px 20px;
-        width: 150px;
-        font-weight: bold;
-        color: white;
-        border: none;
-        cursor: pointer;
     }
     .btn-add {
         padding: 10px;
-        border-radius: 10px;
+        border-radius: 5px;
         background-color: lightseagreen;
         width: 150px;
         font-weight: bold;

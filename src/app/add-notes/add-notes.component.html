@@ -1,4 +1,7 @@
-<form #notesForm="ngForm" (ngSubmit)="saveProductDetails(notesForm)">
+<form class="main" #notesForm="ngForm" (ngSubmit)="saveProductDetails(notesForm)">
+    <button class="btn-add" (click)="addNewNotes()">
+        Add Notes
+    </button>
     <div class="container">
         <label>Title:</label>
         <input class="form-control" placeholder="Enter Title" autocomplete="off" type="text" name="title"
@@ -10,8 +13,8 @@
             <button class="btn-submit" type="submit" [disabled]="!notesForm.valid">
                 {{ notesButtonName || 'Save'}}
             </button>
-            <button class="btn-submit" [disabled]="!notesForm.valid" (click)="addNewNotes()">
-                Add Notes
+            <button class="btn-cancel" [disabled]="!notesForm.valid" (click)="cancelNotes()">
+                Cancel
             </button>
         </div>
     </div>

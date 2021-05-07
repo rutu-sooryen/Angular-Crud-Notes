@@ -1,17 +1,17 @@
 [
     {
         "id": 1,
-        "title": "ABC",
-        "body": "abcdef"
+        "title": "Note 1",
+        "body": "Note 1 from the list"
     },
     {
         "id": 2,
-        "title": "XYZ",
-        "body": "xyz"
+        "title": "Note 2",
+        "body": "Note 2 from the list"
     },
     {
         "id": 3,
-        "title": "PQR",
-        "body": "pqr"
+        "title": "Note 3",
+        "body": "Note 3 from the list"
     }
 ]
